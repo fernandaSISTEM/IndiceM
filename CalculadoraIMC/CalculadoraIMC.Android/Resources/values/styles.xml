@@ -1,0 +1,30 @@
+<? xml versión = " 1.0 " encoding = " utf-8 " ?>
+< recursos >
+
+  < style  name = " MainTheme "  parent = " MainTheme.Base " >
+  </ estilo >
+  <! - Tema base aplicado sin importar la API ->
+  < style  name = " MainTheme.Base "  parent = " Theme.AppCompat.Light.DarkActionBar " >
+    <! - Si está utilizando la revisión 22.1, utilice solo windowNoTitle. Sin Android: ->
+    < item  name = " windowNoTitle " > verdadero </ item >
+    <! - Usaremos la barra de herramientas, por lo que no es necesario mostrar ActionBar ->
+    < item  name = " windowActionBar " > falso </ item >
+    <! - Establecer colores de tema desde https://aka.ms/material-colors ->
+    <! - colorPrimary se utiliza para el fondo de la barra de acciones predeterminado ->
+    < item  name = " colorPrimary " > # 2196F3 </ item >
+    <! - colorPrimaryDark se usa para la barra de estado ->
+    < item  name = " colorPrimaryDark " > # 1976D2 </ item >
+    <! - colorAccent se utiliza como valor predeterminado para colorControlActivated
+         que se usa para teñir widgets ->
+    < item  name = " colorAccent " > # FF4081 </ item >
+    <! - También puede configurar colorControlNormal, colorControlActivated
+         colorControlHighlight y colorSwitchThumbNormal. ->
+    < item  name = " windowActionModeOverlay " > verdadero </ item >
+
+    < item  name = " android: datePickerDialogTheme " > @ style / AppCompatDialogStyle </ item >
+  </ estilo >
+
+  < style  name = " AppCompatDialogStyle "  parent = " Theme.AppCompat.Light.Dialog " >
+    < item  name = " colorAccent " > # FF4081 </ item >
+  </ estilo >
+</ recursos >

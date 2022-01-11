@@ -1,0 +1,19 @@
+Cualquier activo sin procesar que desee implementar con su aplicación se puede colocar en
+este directorio (y los directorios secundarios) y se le asignó una acción de compilación de "AndroidAsset".
+
+Estos archivos se implementarán con su paquete y se podrá acceder a ellos mediante la aplicación de Android.
+AssetManager, así:
+
+clase pública ReadAsset: Activity
+{
+    anulación protegida void OnCreate (paquete de paquete)
+    {
+        base.OnCreate (paquete);
+
+        InputStream input = Assets.Open ("my_asset.txt");
+    }
+}
+
+Además, algunas funciones de Android cargarán automáticamente archivos de activos:
+
+Tipo de letra tf = Typeface.CreateFromAsset (Context.Assets, "fonts / samplefont.ttf");

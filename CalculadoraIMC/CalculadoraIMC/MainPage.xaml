@@ -1,0 +1,29 @@
+<? xml versión = " 1.0 " encoding = " utf-8 " ?>
+< ContentPage  xmlns = " http://xamarin.com/schemas/2014/forms "
+             xmlns : x = " http://schemas.microsoft.com/winfx/2009/xaml "
+             xmlns : d = " http://xamarin.com/schemas/2014/forms/design "
+             xmlns : mc = " http://schemas.openxmlformats.org/markup-compatibility/2006 "
+             mc : Ignorable = " d "
+             x : Class = " CalculadoraIMC.MainPage "
+             Visual = " Material " >
+
+    < StackLayout  VerticalOptions = " Centro "
+                 HorizontalOptions = " Centro "
+                 WidthRequest = " 250 " >
+        <! - Coloque nuevos controles aquí ->
+        < Label  Text = " Calcula tu IMC "
+               FontAttributes = " Negrita "
+               FontSize = " 50 "
+               HorizontalTextAlignment = " Centro "
+               TextColor = " # 565168 " />
+        < Marcador de posición de entrada  = " Altura " x : Nombre = " Altura " 
+               Teclado = " Numérico " />
+        < Marcador de posición de entrada  = " Peso " x : Nombre = " Peso " 
+               Teclado = " Numérico " />
+        < Marcador de posición de entrada  = " Tu IMC " x : Nombre = " IMC " 
+               IsEnabled = " Falso " />
+        < Botón de  Texto = " Calcular "  Seguido = " Button_Clicked "
+                BackgroundColor = " DarkMagenta " />
+    </ StackLayout >
+
+</ ContentPage >

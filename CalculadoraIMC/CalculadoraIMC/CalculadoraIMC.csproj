@@ -1,0 +1,17 @@
+< Proyecto  Sdk = " Microsoft.NET.Sdk " >
+
+  < Grupo de propiedades >
+    < TargetFramework > netstandard2.0 </ TargetFramework >
+    < ProduceReferenceAssembly > verdadero </ ProduceReferenceAssembly >
+  </ PropertyGroup >
+
+  < Condición del grupo de propiedades  = " '$ (Configuración) | $ (Plataforma)' == 'Depurar | AnyCPU' " >
+    < DebugType > portable </ DebugType >
+    < DebugSymbols > verdadero </ DebugSymbols >
+  </ PropertyGroup >
+
+  < ItemGroup >
+    < PackageReference  Incluir = " Xamarin.Forms "  Version = " 4.5.0.396 " />
+    < PackageReference  Incluir = " Xamarin.Essentials "  Version = " 1.3.1 " />
+  </ ItemGroup >
+</ Proyecto >
